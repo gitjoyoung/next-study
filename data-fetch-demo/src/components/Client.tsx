@@ -25,12 +25,12 @@ export default function Client() {
   return (
     <div>
       {isLoaded && <div>Loading...</div>}
-      <p>
+      <div>
         {data &&
           data.map((item: data) => {
-            return <div key={item.id}>{item.title}</div>;
+            return <p key={item.id}>{item.title}</p>;
           })}
-      </p>
+      </div>
     </div>
   );
 }
